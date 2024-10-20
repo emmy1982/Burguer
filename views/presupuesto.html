@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Big Burguer ¡Ven a nuestro restaurante! También ofrecemos comida para llevar</title>
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel=" icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Oswald:wght@200..700&family=Yellowtail&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="container-background">
+            <!-- HEADER -->
+            <header>
+                <div class="container-header">
+                    <h1><a href="../index.html">Big Burger</a></h1>
+                    <nav>
+                        <ul class="navigationList">
+                            <li><a class="enlace " href="../index.html">INICIO</a></li>
+                            <li><a class="enlace" href="productos.html">NUESTRA CARTA</a></li>
+                            <li><a class="enlace  active" href="#">RESERVAS</a></li>
+                            <li><a class="enlace" href="../views/contacto.html">ESTAMOS AQUÍ</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn-compra">
+                        <a href="productos.html">Hacer pedido</a>
+                    </div>
+               </div>
+           </header>
+            <!-- MAIN -->
+            <main>
+                <div class="reservas">
+                    <h1>Haz tu reserva</h1>
+                        <div class="form-container">
+                            <form name="form" action="#" method="get" target="_self">
+
+
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" name="name" placeholder="Escriba su nombre" required>
+
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" id="apellidos" name="apellidos" placeholder="Escriba sus apellidos" required>
+
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Escriba su teléfono"
+                                    pattern="[0-9]{9}" title="Escriba solo números" required>
+
+                                <label for="email">E-mail </label>
+                                <input type="email" id="email" name="email" placeholder="Correo electrónico"
+                                    pattern="[a-zA-Z0-9_-.]+@[a-z0-9._-]+\.[a-z]{2,4}" title="Escriba su correo electrónico"
+                                    required>
+
+                                <label for="mensaje">Solicite más información</label>
+                                <textarea rows="10" id="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+                                <div class="check">
+                                    <label for="typecheck">"Política de privacidad" de la empresa</label>
+                                    <input id="typecheck" type="checkbox" name="check" required>
+                                </div>
+                                <input id="btn-enviar" type="submit" name="enviar" value="Enviar">
+                            </form>
+                        </div>
+                </div>
+            </main>
+            <!-- FOOTER -->
+            <footer>
+                <div class="container-footer footer-presupuesto">
+                    <div class="avisoLegal">
+                        <h4>SERVICIOS</h4>
+                        <ul>
+                            <li><a href="https://www.aepd.es/politica-de-privacidad-y-aviso-legal" target="_blank">Aviso
+                                    Legal</a></li>
+                            <li><a href="https://policies.google.com/technologies/cookies?hl=es" target="_blank">Política de
+                                    Cookies</a></li>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="https://mcdonalds.es/productos/?gad_source=1&gclid=CjwKCAjw_LOwBhBFEiwAmSEQAQzZm5wxwd8Qq3hlrCeynOzVv9lSwh6dBAY0Ig7zPKMSdgG8atIu1RoCxmkQAvD_BwE&gclsrc=aw.ds"
+                                    target="_blank">Nuestras franquicias</a></li>
+                            <li><a href="#">Algo Interesante</a></li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <h4>Big Burguer</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i>
+                                <a href="tel:+34678453221">+34678453221</a>
+                            </li>
+                            <li><i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:bigburguer@gmail.com">bigburguer@hotmail.com</a>
+                            <li> <i class="fa-solid fa-location-dot"></i>
+                                <a href="https://maps.app.goo.gl/3Lt2a7kjCXJ2neoa7" target="_blank">Pablo Picasso nº56
+                                    (Granada)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="redes">
+                        <h4>FOLLOW US</h4>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/es/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p> &copy; Copyrigth Big-Burguer 2024 |Todos los derechos reservados.</p>
+                </div>
+            </footer>
+        </div>
+
+    </body>
+
+</html>

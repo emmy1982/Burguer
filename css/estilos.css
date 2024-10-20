@@ -1,0 +1,1199 @@
+/* *************************************************************************************
+******************************ESTILOS GENERALES****************************************
+****************************************************************************************/
+:root {
+    --boton: #ffbe33;
+    --botonPress: #ff9c07;
+    --darkgrey: #343a40;
+    --white: white;
+    --fontDancing: Dancing Script;
+    --text-shadowgrey: 2px 2px 2px #8c8f91;
+    --box-shadow: 5px 5px 15px 5px #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Estilo de letra de google font */
+.yellowtail-regular {
+    font-family: "Yellowtail";
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* **********************************HEADER******************************************** */
+/* ******************************BARRA DE NAVEGACIÓN*************************************
+*****************************************************************************************/
+
+ .background-burguer{
+    background: url(../asset/images/louis-hansel-eHLMHx2gohs-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+ }  
+
+ .container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 15px 3px #000000;
+    position: relative;
+    
+}
+.navigationList{
+    align-items: center;
+    padding: 20px 100px;
+    display: flex;
+    height: 100px; 
+}
+
+.navigationList li {
+    display: inline-block;
+    padding: 0 20px;
+
+}
+/* Navigator active */
+nav .navigationList li a.active {
+    color: #ffbe33;
+}
+
+h1 a {
+    color: white;
+    font-family:var(--fontDancing);
+    font-weight: 30;
+    font-size: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-shadow: var(--text-shadowgrey);
+}
+
+h1 :hover {
+    transform: scale(1.3);
+    color: #ff9c07;
+}
+
+.navigationList li a.enlace {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    list-style: none;
+}
+
+.navigationList li a:hover {
+    color: #ff9c07;
+}
+
+.navigationList li {
+    list-style: none;
+}
+
+.btn-compra i {
+    color: white;
+    padding: 0 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-compra i:hover {
+    color: #ff9c07;
+    transform: scale(1.2);
+}
+
+.btn-compra a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ffbe33;
+    border-radius: 45px;
+    border: none;
+    transition: all 0.3s;
+    padding: 8px 30px;
+    color: white;
+}
+
+.btn-compra a:hover {
+    background-color: #ff9c07;
+    transform: scale(1.1);
+}
+
+/* ********************IMAGEN HEADER***********************************
+***********************************************************************
+***********************************************************************/
+
+
+.banner{
+    background: url(../asset/images/louis-hansel-eHLMHx2gohs-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.background-header{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+/****************SLIDER FOTO PRINCIPAL*************************************
+***************************************************************************
+***************************************************************************/
+.slider-1 {
+    max-width: 800px;
+    height: 42%;
+    overflow: hidden;
+    border: 3px solid orange;   
+    border-radius: 15px;
+    margin-bottom: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-1 .slider {
+    display: flex;
+    animation: slider-1 25s infinite ease-in-out;
+}
+
+.slider-1 .slider .slider-list {
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+    width: 100%; 
+    font-size: 1.3rem;
+}
+
+.slider-1 .slider .slider-list h2 {
+    font-family: Dancing Script;
+    font-size: 4rem;
+    padding: 15px;  
+    font-weight: 100;
+    line-height: 3.6rem;
+}
+
+.slider-1 .slider .slider-list p{
+    padding: 15px; 
+}
+
+
+@keyframes slider-1 {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    25%,
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50%,
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75%,
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+/* *******************************PRESENTACIÓN**************************************
+************************************************************************************
+************************************************************************************/
+
+.container-presentacion {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textpresentacion {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 200px auto;
+}
+
+.textpresentacion h2 {
+    text-align: center;
+    font-family: var(--fontDancing);
+    text-shadow: var(--text-shadowgrey);
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+.textpresentacion p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+.fotoburguer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to top, #FFBE33 0%, #FFFFFF 100%);
+    margin-top: -200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.fotoburguer img {
+    width: 60%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -130px;
+}
+
+/* **********************SECCIÓN SOBRE NOSOTROS*********************************************
+*************************Descubre nuestra carta*********************************************
+********************************************************************************************/
+.title-nosotros {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 180px;
+}
+
+.title-nosotros h2 {
+    font-family: var(--fontDancing);
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-shadow: var(--text-shadowgrey);
+    margin-bottom: 70px;
+}
+
+.nosotros {
+    width: 100%;
+    height: 100vh;
+    background: url(../asset/images/fondo-restaurante.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    border-top: 4px solid var(--boton);
+    border-bottom: 4px solid var(--boton);
+}
+
+.container-nosotros {
+    width: 80%;
+    height: 100vh;
+    background: rgba(254, 210, 121, 0.3);
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.parrafo-nosotros {
+    background: url(../asset/images/hamburguesa-extreme.jpeg);
+    width: 400px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: all 0.3s;
+}
+
+.parrafo-nosotros1 {
+    background: url(../asset/images/pizza-extrem.jpg);
+    width: 400px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: all 0.3s;
+}
+
+.parrafo-nosotros2 {
+    background: url(../asset/images/batidos.jpg);
+    width: 400px;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: all 0.3s;
+}
+
+.parrafo-nosotros:hover, .parrafo-nosotros1:hover, .parrafo-nosotros2:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.img-nosotros p {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: var(--fontDancing);
+    font-size: 4rem;
+    padding: 40px;
+    text-shadow: var(--text-shadowgrey);
+    text-align: center;
+    margin: auto;
+}
+
+.img-nosotros a {
+    text-decoration: none;
+}
+
+
+
+/********************************SECCIÓN OFERTAS************************************
+ ***********************************************************************************
+ ***********************************************************************************/
+.ofertas {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.ofertas .t-ofertas {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.ofertas .t-ofertas h3 {
+    font-family: var(--fontDancing);
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-shadow: var(--text-shadowgrey);
+}
+
+.container-ofertas {
+    width: 90%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.text-ofertas {
+    width: 45%;
+    display: flex;
+    background-color: var(--darkgrey);
+    justify-content: space-between;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+
+.container-ofertas .img-ofertas img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--boton);
+    object-fit: cover;
+}
+
+.img-ofertas {
+    margin: 0 auto;
+}
+
+.text-ofertas-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.text-ofertas h3 {
+    display: flex;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    margin-top: 10px;
+    transition: 0.1s;
+    text-align: center;
+}
+
+.text-ofertas p {
+    color: white;
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--fontDancing);
+    margin-top: 8px;
+}
+
+.container-ofertas .text-ofertas a {
+    font-size: 1.2rem;
+    border-radius: 25px;
+    background-color: #ffbe33;
+    padding: 8px 30px;
+    color: white;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.container-ofertas .text-ofertas a:hover {
+    background-color: var(--botonPress);
+}
+
+/* ************************************RESEÑAS****************************************
+**************************************************************************************
+**************************************************************************************/
+
+.t-reseñas {
+    width: 100%;
+    text-align: center;
+}
+
+.t-reseñas h3 {
+    font-family: var(--fontDancing);
+    font-size: 3.5rem;
+    font-weight: 200;
+    text-shadow: var(--text-shadowgrey);
+}
+
+.container-reseñas {
+    display: flex;
+    justify-content: center;
+}
+
+.card-reseña {
+    text-align: center;
+    margin: 100px 50px;
+}
+
+.card-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: -30px;
+    border: 4px solid var(--boton);
+}
+
+.t-text {
+    /* border: 3px solid rgb(180, 178, 178); */
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.t-text h4 {
+    /* font-family: var(--fontDancing); */
+    font-size: 1.5rem;
+}
+
+.t-text p {
+    margin-top: 10px;
+}
+
+/* **************************FOOTER***************************************
+**************************************************************************
+**************************************************************************/
+footer {
+    width: 100%;
+    background: -moz-linear-gradient(izquierda, #141719 0%, #343A40 31%, #4E5760 100%);
+    background: -webkit-linear-gradient(izquierda, #141719 0%, #343A40 31%, #4E5760 100%);
+    background: linear-gradient(to right, #141719 0%, #343A40 31%, #4E5760 100%);
+    border-top: 3px solid var(--boton);
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+/* ****Sección aviso legal footer***** */
+.avisoLegal h4 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+
+.avisoLegal a {
+    text-decoration: none;
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.avisoLegal a:hover {
+    color: var(--botonPress);
+    border-bottom: 2px solid var(--botonPress);
+}
+
+.avisoLegal ul li {
+    list-style: none;
+    line-height: 30px;
+}
+/* *****Sección redes sociales footer***** */
+.redes {
+    text-align: center;
+}
+
+.redes h4 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.redes i {
+    color: var(--white);
+    font-size: 2rem;
+    display: inline-block;
+    margin: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.redes i:hover {
+    transform: scale(1.1);
+    color: var(--botonPress);
+}
+/* ****Copyrigth footer******************* */
+.copy {
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    padding: 15px;
+    background-color: var(--boton);
+}
+/* ****Sección de información footer****** */
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: var(--white);
+    line-height: 30px;
+}
+
+.info h4 {
+    font-family: var(--fontDancing);
+    font-weight: 100;
+    font-size: 3rem;
+    color: var(--white);
+    margin-bottom: 24px;
+}
+
+.info ul li a {
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.info ul li {
+    list-style: none;
+}
+
+.info ul li a:hover {
+    color: var(--botonPress);
+    border-bottom: 2px solid var(--botonPress);
+}
+.footer-presupuesto{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* ***************************************************************************************
+*******************************************PRODUCTOS**************************************
+******************************************NUESTRA CARTA **********************************
+******************************************************************************************
+******************************************************************************************/
+
+.title-carta {
+    width: 100%;
+    text-align: center;
+}
+
+.title-carta h1 {
+    font-family: var(--fontDancing);
+    font-size: 6rem;
+    font-weight: 200;
+    text-shadow: var(--text-shadowgrey);
+    margin-top: 80px;
+}
+
+.nav-carta {
+    text-align: center;
+}
+
+.nav-carta ul li {
+    display: inline-block;
+    margin: 40px;
+    margin-top: 60px;
+    font-size: 2.5rem;
+    font-family: var(--fontDancing);
+    font-weight: 300;
+    cursor: pointer;
+    text-shadow: var(--text-shadowgrey);
+}
+
+.nav-carta ul li a {
+    transition: 0.4s;
+}
+
+.nav-carta ul li a:hover {
+    color: var(--botonPress);
+    border-bottom: 1px solid;
+}
+
+.nav-carta ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nuestromenu-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+/* **********************Sección Burguer*************************************
+*****************************************************************************
+*****************************************************************************/
+.burguer-container {
+    padding: 30px;
+}
+
+.burguer-list {
+    position: relative;
+    width: 330px;
+    height: 230px;
+    background-color: #727476;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.burguer-list:hover {
+    height: 430px;
+}
+
+.burguer-image {
+    position: relative;
+    width: 260px;
+    height: 230px;
+    top: -70px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+
+}
+
+.burguer-image img {
+    width: 100%;
+    height: 235px;
+    border-radius: 10px;
+    border: 4px solid var(--boton);
+    object-fit: cover;
+}
+
+.burguer-text {
+    position: relative;
+    margin-top: -150px;
+    padding: 1px 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.burguer-text h2 {
+    font-family: var(--fontDancing);
+    font-size: 2rem;
+    font-weight: 200;
+
+}
+
+/* ****************carrito compra******** */
+.burguer-text i {
+    float: right;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--boton);
+}
+
+.burguer-text i:hover {
+    background-color: var(--botonPress);
+    transition: 0.3s;
+}
+
+.burguer-list:hover .burguer-text {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay: 0.1s;
+}
+
+/* ********************Sección Pizzas************************************
+*************************************************************************
+*************************************************************************/
+.title-pizzas {
+    width: 100%;
+    text-align: center;
+}
+
+.title-pizzas h2 a {
+    font-size: 3.5rem;
+    font-family: var(--fontDancing);
+    font-weight: 400;
+    transition: 0.3s;
+    text-shadow: var(--text-shadowgrey);
+    text-decoration: none;
+    color: black;
+}
+
+.title-pizzas h2 a:hover {
+    cursor: pointer;
+    color: var(--botonPress);
+    /* border-bottom: 2px solid; */
+}
+/* *********Galeria de imágenes***********************
+*************************************************** */
+.pizza-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.pizzas-container {
+    padding: 30px;
+}
+
+.pizzas-list {
+    position: relative;
+    width: 330px;
+    height: 230px;
+    background-color: #727476;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pizzas-list:hover {
+    height: 430px;
+}
+
+.pizzas-image {
+    position: relative;
+    width: 260px;
+    height: 230px;
+    top: -70px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+
+}
+
+.pizzas-image img {
+    width: 100%;
+    height: 235px;
+    border-radius: 10px;
+    border: 4px solid var(--boton);
+    object-fit: cover;
+}
+
+.pizzas-text {
+    position: relative;
+    margin-top: -150px;
+    padding: 1px 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+
+.pizzas-text h2 {
+    font-family: var(--fontDancing);
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+/* ****************carrito compra******** */
+.pizzas-text i {
+    float: right;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--boton);
+}
+
+.pizzas-text i:hover {
+    background-color: var(--botonPress);
+    transition: 0.3s;
+}
+
+.pizzas-list:hover .pizzas-text {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay:  0.1s;
+}
+
+/* ******************************Sección Patatas y Postres**************************
+************************************************************************************
+************************************************************************************/
+
+.title-postres, .title-patatas {
+    width: 100%;
+    text-align: center;
+}
+
+.title-postres h2 a, .title-patatas h2 a {
+    font-size: 3.5rem;
+    font-family: var(--fontDancing);
+    font-weight: 400;
+    transition: 0.3s;
+    text-shadow: var(--text-shadowgrey);
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+.title-patatas h2 a:hover {
+    cursor: pointer;
+    color: var(--botonPress);
+}
+
+.title-postres h2 a:hover {
+    cursor: pointer;
+    color: var(--botonPress);
+}
+/* ************Galeria de imagenes************
+******************************************** */
+.postres-section, .patatas-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+
+.postres-container, .patatas-container {
+    padding: 30px;
+    position: relative;
+   
+}
+.patatas-container{
+     margin-top: 40px;
+}
+
+.postres-list, .patatas-list {
+    position: relative;
+    width: 330px;
+    height: 230px;
+    background-color: #727476;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.patatas-list:hover {
+    height: 430px;
+}
+
+.postres-list:hover {
+    height: 430px;
+}
+
+.postres-image, .patatas-image {
+    position: relative;
+    width: 260px;
+    height: 230px;
+    top: -70px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+
+}
+
+.postres-image img, .patatas-image img {
+    width: 100%;
+    height: 235px;
+    border-radius: 10px;
+    border: 4px solid var(--boton);
+    object-fit: cover;
+}
+
+.postres-text, .patatas-text {
+    position: relative;
+    margin-top: -150px;
+    padding: 1px 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.postres-text h2, .patatas-text h2 {
+    font-family: var(--fontDancing);
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+/* ****************carrito compra******** */
+.postres-text i, .patatas-text i {
+    float: right;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: var(--boton);
+}
+
+.postres-text i:hover {
+    background-color: var(--botonPress);
+    transition: 0.3s;
+}
+
+.patatas-text i:hover {
+    background-color: var(--botonPress);
+    transition: 0.3s;
+}
+
+.patatas-list:hover .patatas-text {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay: 0.1s;
+}
+
+.postres-list:hover .postres-text {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -60px;
+    transition-delay: 0.1s;
+}
+
+/* ************Botón subir************************ 
+***************************************************/
+.top, .top1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -90px;
+}
+
+.top a, .top1 a {
+    text-decoration: none;
+    background-color: var(--boton);
+    font-size: 1.5rem;
+    border-radius: 50px;
+    color: var(--white);
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.top {
+    margin-top: 10px;
+}
+
+.top a:hover, .top1 a:hover {
+    background-color: var(--botonPress);
+    transform: scale(1.2);
+}
+
+
+
+/* *****************************PRESUPUESTO******************************************************
+********************************FORMULARIO*******************************************************
+*************************************************************************************************
+*************************************************************************************************/
+.container-background {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #141719;
+    background: -moz-linear-gradient(izquierda, #141719 0%, #343A40 31%, #4E5760 100%);
+    background: -webkit-linear-gradient(izquierda, #141719 0%, #343A40 31%, #4E5760 100%);
+    background: linear-gradient(to right, #141719 0%, #343A40 31%, #4E5760 100%);
+}
+
+.reservas {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.reservas h1 {
+    font-family: var(--fontDancing);
+    font-size: 3rem;
+    font-weight: 100;
+    text-shadow: var(--text-shadowgrey);
+    color: white;
+   margin-top: 50px;
+
+}
+/*----Formulario----*/
+/* *********************** */
+
+.form-container form {
+    background: rgba(0, 0, 0, .3);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin: 60px auto;
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.form-container form label {
+    display: block;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    float: left;
+
+}
+
+.form-container form input {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    border-bottom: 4px solid var(--botonPress);
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: white;
+}
+
+.form-container form textarea {
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    outline: none;
+    border-bottom: 4px solid var(--botonPress);
+    width: 100%;
+    height: 150px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.check label {
+    width: 70%;
+}
+
+.check input {
+    width: 50%;
+}
+
+#typecheck {
+    width: 4%;
+}
+
+#btn-enviar {
+    width: 30%;
+    cursor: pointer;
+    background-color: var(--boton);
+}
+
+/********************************CONACTO***********************************************************
+********************************ESTAMOS AQUÍ*******************************************************
+***************************************************************************************************
+***************************************************************************************************/
+
+.title-ubicacion {
+    width: 100%;
+    text-align: center;
+}
+
+.title-ubicacion h1 {
+    font-family: var(--fontDancing);
+    font-size: 5rem;
+    font-weight: 200;
+    text-shadow: var(--text-shadowgrey);
+    margin-top: 60px;
+}
+
+.container-ubicacion {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-ubicacion p {
+    width: 60%;
+    padding: 40px;
+    font-size: 1.2rem;
+}
+
+#mapa {
+    margin-bottom: 80px;
+}
+.date{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+}
